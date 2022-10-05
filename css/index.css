@@ -1,0 +1,41 @@
+.header{
+    height: 80px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo{
+    width: 200px;
+    display: inline-block;
+}
+
+img{
+    max-width: 100%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; é a mesma coisa que as 2 linhas de cima */
+    list-style: none;
+    height: 80px;
+    align-items: center;
+    /* flex-grow: 1; */
+}
+
+.menu-item{
+    font-size: 16px;
+}
+
+.menu-item-link{
+    padding: 20px;
+    color: black;
+    font-family: sans-serif;
+}
