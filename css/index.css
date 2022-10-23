@@ -1,65 +1,74 @@
-*{
+* {
     box-sizing: border-box;
+}
+
+body{
+    background: #898989;
+    position: relative;
+    max-width: 100%;
+}
+
+ul, body, figure, p, section, img, h3{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin: 0 auto;
+    width: 89.156%;
+    max-width: 100%;
+    position: relative;
 }
 
 .header{
     height: 80px;
     background: white;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 1;
+    justify-content: space-between;
 }
 
 .logo{
-    width: 200px;
+    max-height: 34px;
+}
+
+.header-title{
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 20px;
+    padding: 0px 40px;
+}
+
+.header-container{
     display: flex;
     justify-content: center;
-}
-
-img{
-    max-width: 100%;
-    height: 50px;
-}
-
-.menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* flex-flow: row wrap; é a mesma coisa que as 2 linhas de cima */
-    list-style: none;
-    height: 80px;
     align-items: center;
-    /* flex-grow: 1; */
 }
 
-.menu-item{
-    font-size: 16px;
-}
-
-.menu-item-link{
-    padding: 20px;
-    color: black;
-    font-family: sans-serif;
-}
-
-body{
-    background: #ccc;
-    margin: 0;
-}
-
-.content{
-    height: 500px;
-    width: 100%;
-    padding: 0 20%;
+.resumo{
     display: flex;
-    justify-content: center;
-    position: relative;
-    top: 100px;
+    flex-direction: column;
     align-items: center;
+}
+
+.resumo-title{
     font-size: 30px;
-        
+}
+
+.resumo-text{
+    width: 100%;
+    padding: 0 15%;
+    text-align: justify;
+}
+
+.text{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media (max-width: 875px){
+
 }
