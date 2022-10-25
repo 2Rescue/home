@@ -6,37 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/2resce-logo.png">
     <title>2RESCUE</title>
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <section class="container header-container">
             <img class=" logo logo-image" src="assets/2resce-logo.png" alt="logo">
-            <h1 class="header-title">2Rescue: Dispositivo de Apoio para Localizar Bombeiros em Estruturas Colapsadas</h1>
+            <p class="header-title">2Rescue: Dispositivo de Apoio para Localizar Bombeiros em Estruturas Colapsadas</p>
         </section>
     </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p style="font-size: 40px; text-align: center;">O site ainda está em desenvolvimento</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
     <section class="resumo container">
-        <h3 class="resumo-title">Resumo do projeto em português</h3>
+        <p class="resumo-title">Resumo do projeto em português</p>
         <p class="resumo-text text">Socorristas resgatistas regularmente colocam sua integridade física em risco, podendo, em alguns casos, ir a óbito. Em julho de 2021, dois bombeiros desapareceram enquanto faziam o combate às chamas no incêndio do prédio da Secretaria de Segurança Pública em Porto Alegre. A falta de equipamentos e a dificuldade dos cães farejadores em encontrar o rastro dos corpos resultaram no retardamento da procura pelos desaparecidos. Além da mobilização de recursos do estado para logística, hospedagem e alimentação dos profissionais, a extensa duração das buscas também causou intenso desgaste físico e emocional aos envolvidos. Portanto, o propósito desta pesquisa é desenvolver um dispositivo que auxilie na localização de socorristas resgatistas dentro de estruturas colapsadas, sinalizando a proximidade com o bombeiro desaparecido por meio do indicador de intensidade do sinal recebido (RSSI). Para isso, a pesquisa foi dividida em seis etapas: entendimento e aproximação com o contexto; estudo e escolha das tecnologias compatíveis; desenvolvimento dos protótipos; testes de capacidade e limitações; análise dos resultados; definição dos próximos passos. Foram confeccionados dois protótipos, denominados “receptor” e “transmissor”, utilizando unidades de controle programáveis conectadas a rádios inteligentes (módulos LoRa). O transmissor envia um sinal de rádio periodicamente ao receptor e, através desse sinal, é obtido o indicador de intensidade de sinal recebido. A variação desse indicador é interpretada pelo firmware e, com isso, infere-se uma faixa de distância entre os dois dispositivos - representando a distância entre o bombeiro desaparecido e o bombeiro que o procura - sinalizada por indicadores visual e sonoro (LED e buzzer). A etapa de testes de capacidade e limitações foi realizada em dois cenários: em linha reta, horizontalmente e sem obstáculos (para observar inicialmente a variação do RSSI) e entre andares de um edifício (para simular a situação da estrutura como obstáculo para o sinal). No primeiro teste, o valor do RSSI variou entre -27 e -67 de 1 a 30 metros de distância, diminuindo conforme a distância aumentava. No segundo teste, o valor do RSSI variou entre -66 e -102 de 1 a 9 andares de distância, indicando que a inclusão de obstáculos entre os protótipos diminui a intensidade do sinal. A partir de seis andares de distância, o RSSI chegou ao seu limite negativo próximo a -100 e se manteve constante, mesmo quando a distância aumentava. Com base nesses testes, concluiu-se que é possível sinalizar uma faixa de distância entre os dois dispositivos pelo indicador de intensidade de sinal recebido e que estruturas entre os dispositivos não impedem a transmissão e recepção do sinal, mas diminuem significativamente o valor de RSSI, limitando a percepção de distâncias maiores. A aproximação e o afastamento dos protótipos gerou variação suficiente do RSSI para que o sinalizador indicasse a mudança da faixa de distância entre eles. Para melhorar a precisão utilizou-se a média aritmética dos valores recebidos em um curto período  de tempo antes de sinalizar. Ao terminar a etapa de testes e viabilizar um encapsulamento inicial para a usabilidade dos protótipos, apresentou-se os dispositivos para serem avaliados pelos bombeiros. Nessa avaliação, os resgatistas aprovaram os protótipos e atestaram a importância de um equipamento como esse para precaução e complemento em suas atividades de resgate. A escolha das tecnologias para a pesquisa se mostrou adequada e satisfatória para o desenvolvimento dos protótipos, assim como para os testes e para as possibilidades de aperfeiçoamento, constatando que o objetivo da pesquisa foi alcançado. Os próximos passos constituem-se por incluir um display no dispositivo receptor, monitorar o nível da bateria e indicar ao usuário, incluir sensores como acelerômetro/giroscópio no dispositivo transmissor e estudar a possibilidade de melhorar a geolocalização aproximada através da determinação de posições trilaterais. <br> Palavras-chave: Bombeiros. Localização. Rádio. Distância.</p>    
     </section>
+    <div class="carousel">
+        <section class="carousel-content">
+            <input type="radio" name="carousel" id="carousel1" checked="checked" />
+            <input type="radio" name="carousel" id="carousel2" />
+            <input type="radio" name="carousel" id="carousel3" />
+            <input type="radio" name="carousel" id="carousel4" />
+            
+            <section class="carousel__stage">
+              <aside class="carousel__item">      
+                <label for="carousel4" class="carousel__prev"></label>
+                <img class="carousel__image" src="assets/img1.jpeg" alt="" />
+                <!-- <p class="legenda">legenda1</p> -->
+                <label for="carousel2" class="carousel__next"></label>
+            </aside>
+            
+            <aside class="carousel__item">
+                <label for="carousel1" class="carousel__prev"></label>
+                <img class="carousel__image" src="assets/img2.jpeg" alt="" />
+                <!-- <p class="legenda">legenda</p> -->
+                <label for="carousel3" class="carousel__next"></label>
+            </aside>
+            
+            <aside class="carousel__item">
+                <label for="carousel2" class="carousel__prev"></label>
+                <img class="carousel__image" src="assets/img3.jpeg" alt="" />
+                <!-- <p class="legenda">legenda</p> -->
+                <label for="carousel4" class="carousel__next"></label>
+            </aside>
+            
+            <aside class="carousel__item">
+                <label for="carousel3" class="carousel__prev"></label>
+                <img class="carousel__image" src="assets/img4.jpeg" alt="" />
+                <!-- <p class="legenda">legenda</p> -->
+                <label for="carousel1" class="carousel__next"></label>
+              </aside>
+            </section>
+          </section>
+    </div>
+
     <section class="relatorio container">
-        <p class="text"><a href="assets/arquivos/Relatório 2Rescue.pdf" target="_blank" >Relátorio de pesquisa do projeto</a></p>
-        
+        <p class="text">Relátorio de pesquisa do projeto: <a href="assets/arquivos/Relatório 2Rescue.pdf" target="_blank" >clique aqui</a></p>
     </section>
+
+    <br>
+
+    <p style="font-size: 30px; text-align: center;">Este website ainda está em desenvolvimento</p>
+
+    <br>
+    
+    <footer class="footer">
+        <section class="container footer-container">
+            <section class="up-footer">
+                <Section class="logo">
+                    <img class=" logo logo-image" src="assets/2resce-logo.png" alt="logo">
+                </Section>
+                <p class="copy copy-mobile">2Rescue: Dispositivo de Apoio para Localizar Bombeiros em Estruturas Colapsadas</p>
+            </section>
+            <section class="bottom-footer">
+                <p>Contato: tefie.staub@gmail.com</p>
+                <p>Website desenvolvido por: weligtonweiss@gmail.com</p>
+            </section>
+        </section>
+    </footer>
 </body>
 </html>

@@ -3,7 +3,7 @@
 }
 
 body{
-    background: #898989;
+    background: #fff;
     position: relative;
     max-width: 100%;
 }
@@ -11,10 +11,6 @@ body{
 ul, body, figure, p, section, img, h3{
     margin: 0;
     padding: 0;
-}
-
-a{
-    text-decoration: none;
 }
 
 .container{
@@ -26,18 +22,20 @@ a{
 
 .header{
     height: 80px;
-    background: white;
+    background: rgba(255, 145, 145, 0.6);
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
 .logo{
-    max-height: 34px;
+    max-height: 80px;
 }
 
 .header-title{
-    font-family: 'Encode Sans SC', sans-serif;
+    font-family: 'Concert One', cursive;
+    font-weight: 100;
+    color: rgb(54, 54, 54);
     font-size: 20px;
     padding: 0px 40px;
 }
@@ -55,12 +53,16 @@ a{
 }
 
 .resumo-title{
+    font-family: 'Concert One', cursive;
+    font-weight: 100;
     font-size: 30px;
+    margin: 3% 0%;
 }
 
 .resumo-text{
     width: 100%;
     padding: 0 15%;
+    margin-top: -1%;
     text-align: justify;
     
 }
@@ -70,6 +72,54 @@ a{
     line-height: 30px;
 }
 
-@media (max-width: 875px){
+.footer{
+    height: 150px;
+    background: rgba(255, 145, 145, 0.6);
+}
 
+.footer-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.bottom-footer, .up-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 1000px) {
+    .resumo-text{
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 644px){
+    .container{
+        width: 95%;
+    }
+
+    .header{
+        height: 120px;
+    }
+
+    .header-container{
+        flex-direction: column;
+    }
+
+    .header-title{
+        font-size: 15px;
+        padding: 0px;
+    }
+
+    .resumo-title{
+        font-size: 20px;
+    }
+
+    .resumo-text{
+        font-size: 14px;
+        line-height: normal;
+    }
 }
